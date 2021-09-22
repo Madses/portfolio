@@ -3,10 +3,10 @@ import GlobalStyle from "./styles/Globalstyle";
 
 function App() {
     return (
-        <div>
+        <>
             <GlobalStyle />
             <Container />
-        </div>
+        </>
     );
 }
 

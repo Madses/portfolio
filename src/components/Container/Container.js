@@ -1,6 +1,13 @@
 import React from "react";
 import * as S from "./Container.styled";
+import Menu from "../Menu";
 
 export default function Container() {
-    return <div>Hello from container</div>;
+    return (
+        <>
+            <S.Container>
+                <Menu />
+            </S.Container>
+        </>
+    );
 }
