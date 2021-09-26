@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import useOnClickOutside from "../../hooks";
-
+import { FaAngleDown } from "react-icons/fa";
 import * as S from "./CustomSelect.styled";
 
 export default function CustomSelect({
@@ -28,17 +28,19 @@ export default function CustomSelect({
                 {selectedOption?.label ||
                     defaultValue?.label ||
                     options[0]?.label}
+                <FaAngleDown />
             </S.CurrentSelected>
 
             {showDropDown && (
                 <S.DropDown ref={dropDownRef}>
                     {options.map((option, index) => (
-                        <button
+                        <S.Option
                             onClick={() => handleSelection(option)}
                             key={index}
+                            active={selectedOption?.label === option.label}
                         >
                             {option.label}
-                        </button>
+                        </S.Option>
                     ))}
                 </S.DropDown>
             )}

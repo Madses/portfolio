@@ -1,20 +1,25 @@
 import styled from "styled-components";
 
 export const DropDown = styled.div`
-    width: 100px;
     min-height: 50px;
-
     display: flex;
     flex-direction: column;
+    position: absolute;
+    background-color: beige;
+    right: 10px;
+    margin-top: -10px;
+`;
 
-    > button {
-        width: 100%;
-        height: 50px;
-        border: 1px solid black;
-    }
+export const Option = styled.button`
+    min-width: 100px;
+    height: 30px;
+    background: ${props => (props.active ? "red" : null)};
 `;
 
 export const CurrentSelected = styled.button`
-    border-bottom: 1px solid black;
-    width: 100px;
+    width: 100%;
+    text-align: left;
+    > svg {
+        height: 10px;
+    }
 `;
