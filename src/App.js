@@ -7,6 +7,7 @@ import { useThemeStore } from "./store";
 function App() {
     const { theme } = useThemeStore();
     console.log(theme);
+
     return (
         <>
             <ThemeProvider theme={themeSelector(theme)}>
