@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect , useState } from "react";
 import CustomSelect from "../CustomSelect/CustomSelect";
 import * as S from "./Header.styled";
 import { useThemeStore } from "../../store";
 
 export default function Header() {
     const { setTheme } = useThemeStore();
+    const [defaultOption,setDefaultOption] = useState(null);
 
     const themeOptions = [
         { value: "light", label: "Light" },
@@ -19,7 +20,9 @@ export default function Header() {
 
     useEffect(() => {
         const savedTheme = localStorage.getItem("theme");
-        if (savedTheme) {
+        setDefaultOption(themeOptions.find(option => option.value === savedTheme));
+
+        if (savedTheme && savedTheme !== 'system') {
             setTheme(savedTheme);
         }
     }, [setTheme]);
@@ -30,15 +33,7 @@ export default function Header() {
             <div>
                 <CustomSelect
                     options={themeOptions}
-                    defaultValue={
-                        localStorage.getItem("theme")
-                            ? themeOptions.find(
-                                  option =>
-                                      option.value ===
-                                      localStorage.getItem("theme")
-                              )
-                            : null
-                    }
+                    defaultValue={defaultOption}
                     callBack={handleThemeChange}
                 />
             </div>
