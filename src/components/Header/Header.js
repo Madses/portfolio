@@ -23,13 +23,6 @@ export default function Header() {
 
     useEffect(() => {
         const savedTheme = localStorage.getItem("theme");
-        setDefaultOption(
-            themeOptions.find(option => option.value === savedTheme)
-        );
-
-        if (savedTheme && savedTheme !== "system") {
-            setTheme(savedTheme);
-        }
     }, [setTheme, themeOptions]);
 
     return (
