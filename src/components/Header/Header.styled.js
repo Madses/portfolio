@@ -9,4 +9,6 @@ export const Header = styled.div`
     display: flex;
     justify-content: flex-end;
     right: 20px;
+    align-items: center;
+    gap: 10px;
 `;
