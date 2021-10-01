@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import * as S from "./Toggle.styled";
-import sun from "../../assets/sun.svg";
-import moon from "../../assets/moon.svg";
 
-export default function Toggle() {
+export default function Toggle({ icons, handler }) {
     const [active, setActive] = useState(false);
     const handleClick = () => {
         setActive(prev => !prev);
@@ -14,7 +12,7 @@ export default function Toggle() {
             <S.Toggle
                 onClick={handleClick}
                 active={active}
-                image={active ? moon : sun}
+                image={active ? icons.active : icons.inactive}
             ></S.Toggle>
         </>
     );

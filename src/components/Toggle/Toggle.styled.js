@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const Toggle = styled.button`
     width: 60px;
     height: 30px;
+    transition: 0.2s;
     border-radius: 15px;
-    background: #8796a5;
+    background: ${props => (props.active ? "#131826" : "#85afff")};
     position: relative;
 
     &::after {
