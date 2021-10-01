@@ -1,11 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import * as S from "./Toggle.styled";
 
-export default function Toggle({ icons, handler }) {
-    const [active, setActive] = useState(false);
+export default function Toggle({ icons, handler, defaultState }) {
+    const [active, setActive] = useState(defaultState);
+
     const handleClick = () => {
         setActive(prev => !prev);
     };
+
+    useEffect(() => {
+        handler(active);
+    }, [active, handler]);
 
     return (
         <>
