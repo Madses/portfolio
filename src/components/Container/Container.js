@@ -10,6 +10,9 @@ export default function Container() {
             <S.Container>
                 <Menu />
                 <Header />
+
+                <S.Section id="section1"></S.Section>
+                <S.Section id="section2"></S.Section>
             </S.Container>
         </>
     );

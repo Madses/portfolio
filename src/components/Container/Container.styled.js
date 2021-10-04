@@ -6,3 +6,9 @@ export const Container = styled.div`
     transition: 0.4s;
     background-color: ${props => props.theme.body};
 `;
+
+export const Section = styled.div`
+    width: 100%;
+    height: 100vh;
+    background-color: beige;
+`;

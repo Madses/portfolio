@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 export const MenuContainer = styled.div`
     width: 100px;
@@ -16,4 +17,8 @@ export const Menu = styled.div`
     background: #181818;
     border-radius: 20px;
     align-self: center;
+    display: flex;
+    flex-direction: column;
 `;
+
+export const MenuItem = styled(Link)``;
