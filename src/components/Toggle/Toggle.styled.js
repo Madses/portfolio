@@ -5,7 +5,7 @@ export const Toggle = styled.button`
     height: 30px;
     transition: 0.2s;
     border-radius: 15px;
-    background: ${props => (props.active ? "#131826" : "#85afff")};
+    background: ${props => (props.active ? "#0d1117" : "#85afff")};
     position: relative;
 
     &::after {

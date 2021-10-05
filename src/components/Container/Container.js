@@ -10,7 +10,6 @@ export default function Container() {
             <S.Container>
                 <Menu />
                 <Header />
-
                 <S.Section id="home"></S.Section>
                 <S.Section id="about"></S.Section>
             </S.Container>

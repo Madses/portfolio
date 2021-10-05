@@ -3,7 +3,7 @@ export const themeSelector = theme => {
 
     const themes = {
         dark: {
-            body: "#121620",
+            body: "#010409",
             text: "#f1f1f1",
         },
 

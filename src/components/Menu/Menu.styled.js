@@ -12,9 +12,9 @@ export const MenuContainer = styled.div`
 `;
 
 export const Menu = styled.div`
-    width: 70px;
-    height: 900px;
-    background: #181818;
+    width: 80px;
+    height: 600px;
+    background: #0d1117;
     border-radius: 20px;
     align-self: center;
     display: flex;
@@ -24,14 +24,13 @@ export const Menu = styled.div`
 `;
 
 export const MenuItem = styled(Link)`
-    width: 70px;
+    width: 80px;
     text-align: center;
     color: white;
     font-size: 1.1rem;
     cursor: pointer;
     position: relative;
-    margin-bottom: 20px;
-
+    margin-bottom: 40px;
     &.active {
         color: #03bbbbf0;
         &::after {
@@ -48,6 +47,7 @@ export const MenuItem = styled(Link)`
 
 export const IconHolder = styled.div`
     text-align: center;
+    padding-bottom: 5px;
     > svg {
         font-size: 2.5rem;
     }

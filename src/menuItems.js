@@ -4,6 +4,7 @@ import {
     FaBriefcase,
     FaPhoneSquareAlt,
 } from "react-icons/fa";
+
 export const menuItems = [
     {
         title: "Home",
