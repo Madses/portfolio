@@ -11,8 +11,8 @@ export default function Container() {
                 <Menu />
                 <Header />
 
-                <S.Section id="section1"></S.Section>
-                <S.Section id="section2"></S.Section>
+                <S.Section id="home"></S.Section>
+                <S.Section id="about"></S.Section>
             </S.Container>
         </>
     );

@@ -16,7 +16,8 @@ export default function Menu() {
                         duration={500}
                         key={index}
                     >
-                        {item.title}
+                        <S.IconHolder>{item.icon}</S.IconHolder>
+                        <span>{item.title}</span>
                     </S.MenuItem>
                 ))}
             </S.Menu>
