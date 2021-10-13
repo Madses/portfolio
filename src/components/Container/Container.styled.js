@@ -10,4 +10,5 @@ export const Section = styled.div`
     width: 100%;
     height: 100vh;
     background-color: ${props => props.theme.body};
+    transition: 0.2s;
 `;
