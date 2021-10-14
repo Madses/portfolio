@@ -21,6 +21,10 @@ const GlobalStyle = createGlobalStyle`
 		min-height: 100%;
 		color: #333333;
 	}
+
+	h1,h2{
+		font-family: "Inter", sans-serif;
+	}
 `;
 
 export default GlobalStyle;
