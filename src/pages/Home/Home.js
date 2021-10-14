@@ -10,11 +10,11 @@ export default function Home() {
                 <h1>Hi, I'm Kevin.</h1>
                 <h2>I build things for the web</h2>
                 <p>I am a Frontend (React) developer from the Netherlands.</p>
-                <ButtonPrimary>More about me</ButtonPrimary>
+                <ButtonPrimary to="about" smooth={true} duration="500">
+                    More about me
+                </ButtonPrimary>
             </S.TextArea>
-            <S.ImageContainer>
-                <img src={memoji} alt="" />
-            </S.ImageContainer>
+            <S.ImageContainer src={memoji} />
         </S.Container>
     );
 }

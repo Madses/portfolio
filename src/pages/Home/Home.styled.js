@@ -4,14 +4,17 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
+    gap: 20px;
     color: ${props => props.theme.text};
-    /* background: ${props => props.theme.panel}; */
     border-radius: 15px;
-    /* box-shadow: 0px 0px 2px rgb(0 0 0 / 20%); */
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 200px;
+    padding-left: 50px;
 `;
 
 export const TextArea = styled.div`
-    width: 50%;
+    width: 700px;
     height: 100%;
     padding: 100px;
     display: flex;
@@ -34,18 +37,15 @@ export const TextArea = styled.div`
         padding-top: 15px;
     }
 
-    button {
+    a {
         margin-top: 60px;
     }
 `;
 
 export const ImageContainer = styled.div`
-    width: 50%;
-    height: 100%;
+    width: 400px;
+    height: 400px;
     text-align: center;
-
-    img {
-        height: 600px;
-        width: auto;
-    }
+    background: url(${props => props.src});
+    background-repeat: no-repeat;
 `;

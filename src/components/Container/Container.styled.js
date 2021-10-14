@@ -9,7 +9,6 @@ export const Container = styled.div`
 export const Section = styled.div`
     width: 100%;
     height: 100vh;
-    padding: 100px 150px 100px 150px;
     background-color: ${props => props.theme.body};
     transition: 0.2s;
 `;
