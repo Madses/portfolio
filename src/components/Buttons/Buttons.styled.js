@@ -4,6 +4,6 @@ export const ButtonPrimary = styled.button`
     height: 50px;
     background: #03bbbbf0;
     color: white;
-    border-radius: 200px;
+    border-radius: 50px;
     font-weight: bold;
 `;
