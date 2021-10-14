@@ -1,6 +1,7 @@
 import React from "react";
 import * as S from "./Home.styled";
 import { ButtonPrimary } from "../../components/Buttons";
+import memoji from "../../assets/memoji-computer.png";
 
 export default function Home() {
     return (
@@ -11,7 +12,9 @@ export default function Home() {
                 <p>I am a Frontend (React) developer from the Netherlands.</p>
                 <ButtonPrimary>More about me</ButtonPrimary>
             </S.TextArea>
-            <S.ImageContainer></S.ImageContainer>
+            <S.ImageContainer>
+                <img src={memoji} alt="" />
+            </S.ImageContainer>
         </S.Container>
     );
 }

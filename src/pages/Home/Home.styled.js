@@ -42,4 +42,8 @@ export const TextArea = styled.div`
 export const ImageContainer = styled.div`
     width: 50%;
     height: 100%;
+    img {
+        height: 600px;
+        width: auto;
+    }
 `;
