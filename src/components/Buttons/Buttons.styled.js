@@ -11,4 +11,5 @@ export const ButtonPrimary = styled(Link)`
     border-radius: 50px;
     font-weight: bold;
     cursor: pointer;
+    position: absolute;
 `;

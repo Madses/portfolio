@@ -11,19 +11,15 @@ export const Container = styled.div`
 export const Content = styled.div`
     width: 70%;
     max-width: 1800px;
-    min-height: 600px;
+    height: 600px;
     display: flex;
     justify-content: center;
     border-radius: 15px;
-    flex-wrap: wrap;
 `;
 
 export const TextArea = styled.div`
     width: 700px;
-    height: 100%;
     padding: 100px;
-    display: flex;
-    flex-direction: column;
     color: ${props => props.theme.text};
 
     h1 {
