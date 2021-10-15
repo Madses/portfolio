@@ -1,16 +1,21 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 100%;
-    height: 100%;
     display: flex;
-    gap: 20px;
-    color: ${props => props.theme.text};
-    border-radius: 15px;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+`;
+
+export const Content = styled.div`
+    width: 70%;
+    max-width: 1800px;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
     flex-wrap: wrap;
-    padding-top: 200px;
-    padding-left: 50px;
 `;
 
 export const TextArea = styled.div`
@@ -19,6 +24,7 @@ export const TextArea = styled.div`
     padding: 100px;
     display: flex;
     flex-direction: column;
+    color: ${props => props.theme.text};
 
     h1 {
         font-size: 80px;
@@ -42,7 +48,7 @@ export const TextArea = styled.div`
     }
 `;
 
-export const ImageContainer = styled.div`
+export const Image = styled.div`
     width: 400px;
     height: 400px;
     text-align: center;

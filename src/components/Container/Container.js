@@ -14,7 +14,9 @@ export default function Container() {
                 <S.Section id="home">
                     <Home />
                 </S.Section>
-                <S.Section id="about"></S.Section>
+                <S.Section id="about">
+                    <Home />
+                </S.Section>
             </S.Container>
         </>
     );
