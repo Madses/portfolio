@@ -4,6 +4,7 @@ import * as S from "./Container.styled";
 import Menu from "../Menu";
 import Header from "../Header";
 import Home from "../../pages/Home";
+import About from "../../pages/About";
 
 export default function Container() {
     return (
@@ -11,12 +12,8 @@ export default function Container() {
             <S.Container>
                 <Menu />
                 <Header />
-                <S.Section id="home">
-                    <Home />
-                </S.Section>
-                <S.Section id="about">
-                    <Home />
-                </S.Section>
+                <Home />
+                <About />
             </S.Container>
         </>
     );

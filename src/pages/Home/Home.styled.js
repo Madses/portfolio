@@ -11,10 +11,11 @@ export const Container = styled.div`
 export const Content = styled.div`
     width: 70%;
     max-width: 1800px;
-    height: 600px;
+    min-height: 600px;
     display: flex;
     justify-content: center;
     border-radius: 15px;
+    flex-wrap: wrap;
 `;
 
 export const TextArea = styled.div`

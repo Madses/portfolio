@@ -5,7 +5,7 @@ import memoji from "../../assets/memoji-computer.png";
 
 export default function Home() {
     return (
-        <S.Container>
+        <S.Container id="home">
             <S.Content>
                 <S.TextArea>
                     <h1>Hi, I'm Kevin.</h1>
