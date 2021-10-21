@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 `;
 
 export const Content = styled.div`
@@ -14,8 +14,10 @@ export const Content = styled.div`
     min-height: 600px;
     display: flex;
     justify-content: center;
+    gap: 10px;
     border-radius: 15px;
     flex-wrap: wrap;
+    overflow: hidden;
 `;
 
 export const TextArea = styled.div`
@@ -45,10 +47,7 @@ export const TextArea = styled.div`
     }
 `;
 
-export const Image = styled.div`
-    width: 400px;
+export const Image = styled.img`
     height: 400px;
-    text-align: center;
-    background: url(${props => props.src});
-    background-repeat: no-repeat;
+    min-width: 400px;
 `;

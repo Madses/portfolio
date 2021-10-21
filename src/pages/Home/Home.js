@@ -17,7 +17,7 @@ export default function Home() {
                         More about me
                     </ButtonPrimary>
                 </S.TextArea>
-                <S.Image src={memoji} />
+                <S.Image src={memoji} alt="" />
             </S.Content>
         </S.Container>
     );

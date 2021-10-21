@@ -12,7 +12,6 @@ export default function Menu() {
                         to={item.sectionId}
                         spy={true}
                         smooth={true}
-                        offset={-70}
                         duration={500}
                         key={index}
                     >
