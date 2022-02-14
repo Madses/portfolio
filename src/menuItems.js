@@ -1,8 +1,8 @@
 import {
     FaHome,
-    FaUserNinja,
-    FaBriefcase,
+    FaUser,
     FaPhoneSquareAlt,
+    FaRegLightbulb,
 } from "react-icons/fa";
 
 export const menuItems = [
@@ -13,19 +13,19 @@ export const menuItems = [
     },
 
     {
-        title: "About",
-        sectionId: "about",
-        icon: <FaUserNinja />,
+        title: "Profile",
+        sectionId: "profile",
+        icon: <FaUser />,
     },
 
     {
-        title: "Work",
+        title: "Learning",
         sectionId: "work",
-        icon: <FaBriefcase />,
+        icon: <FaRegLightbulb />,
     },
 
     {
-        title: "Contact",
+        title: "Contact us",
         sectionId: "contact",
         icon: <FaPhoneSquareAlt />,
     },

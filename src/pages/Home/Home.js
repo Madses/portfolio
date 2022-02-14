@@ -1,23 +1,27 @@
 import React from "react";
 import * as S from "./Home.styled";
 import { ButtonPrimary } from "../../components/Buttons";
-import memoji from "../../assets/memoji-computer.png";
 
 export default function Home() {
     return (
         <S.Container id="home">
             <S.Content>
                 <S.TextArea>
-                    <h1>Hi, I'm Kevin.</h1>
-                    <h2>I build things for the web</h2>
-                    <p>
-                        I am a Frontend (React) developer from the Netherlands.
-                    </p>
+                    <h1>Hi, Welcome to friendsready</h1>
+                    <h2>
+                        A place to meet friends battling mental health problems
+                    </h2>
+                    <p>Click on the button down below to create a profile.</p>
                     <ButtonPrimary to="about" smooth={true} duration="500">
-                        More about me
+                        Create profile!
                     </ButtonPrimary>
                 </S.TextArea>
-                <S.Image src={memoji} alt="" />
+                <S.Image
+                    src={
+                        "https://www.pngall.com/wp-content/uploads/2/Friend-PNG-Image-HD.png"
+                    }
+                    alt=""
+                />
             </S.Content>
         </S.Container>
     );
