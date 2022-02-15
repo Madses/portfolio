@@ -4,7 +4,9 @@ import * as S from "./Container.styled";
 import Menu from "../Menu";
 import Header from "../Header";
 import Home from "../../pages/Home";
-import About from "../../pages/About";
+import Profile from "../../pages/Profile";
+import Social from "../../pages/Social";
+import Learning from "../../pages/Learning";
 
 export default function Container() {
     return (
@@ -13,7 +15,9 @@ export default function Container() {
                 <Menu />
                 <Header />
                 <Home />
-                <About />
+                <Profile />
+                <Learning />
+                <Social />
             </S.Container>
         </>
     );

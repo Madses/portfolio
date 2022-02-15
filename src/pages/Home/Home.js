@@ -12,8 +12,8 @@ export default function Home() {
                         A place to meet friends battling mental health problems
                     </h2>
                     <p>Click on the button down below to create a profile.</p>
-                    <ButtonPrimary to="about" smooth={true} duration="500">
-                        Create profile!
+                    <ButtonPrimary to="profile" smooth={true} duration="500">
+                        Start now!
                     </ButtonPrimary>
                 </S.TextArea>
                 <S.Image
